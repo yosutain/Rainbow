@@ -1,0 +1,301 @@
+ <!DOCTYPE html>
+<html>
+	<head>
+		<title> Rainbow </title>
+		<!-- FavIcon -->
+		<link rel="icon" href="https://dl.dropbox.com/s/7sosry4qeps9fvl/favicon.png">
+	
+		<!-- BootStrap -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+		<!-- CSS -->
+		<link rel="stylesheet" type="text/css" href="css/Style.css">
+
+		<!-- JS -->	
+		<script src="js/Script.js"></script>	
+	</head>
+
+	<body> 
+		<header id="uniqueHeader">
+			<p>
+				Rainbow
+			</p>
+		</header>
+	
+		<nav id="uniqueID">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-2 col-xs-4" id="navigationLink1" onclick="goToSection(firstSection)">
+						<label class="notSelectable">
+							NEWS
+						</label>
+					</div>
+
+					<div class="col-sm-2 col-xs-4" id="navigationLink2" onclick="goToSection(secondSection)">
+						<label class="notSelectable">
+							PRODUCT
+						</label>
+				  	</div>
+
+					<div class="col-sm-2 col-xs-4" id="navigationLink3" onclick="goToSection(thirdSection)">
+						<label class="notSelectable">
+							FAQ
+						</label>
+				  	</div>
+				  	<div class="col-sm-2 col-xs-4" id="navigationLink4" onclick="goToSection(fourthSection)">
+						<label class="notSelectable">
+							TEAM
+						</label>
+				  	</div>
+				  	<div class="col-sm-2 col-xs-4" id="navigationLink5" onclick="goToSection(fifthSection)">
+						<label class="notSelectable">
+							JOIN
+						</label>
+				  	</div>
+				  
+					<div class="col-sm-2 col-xs-4" id="navigationLink6" onclick="goToSection(sixthSection)">
+						<label class="notSelectable">
+							CONTACT
+						</label>
+					</div>
+				</div>
+			</div>
+		</nav>
+	
+		<div class="headerSpace"></div>
+	
+		<div class="container-fluid" id="firstSection">	
+			<div id="textContainer">
+				<h2> 
+					Submit your email and get all the latest Rainbow news directly to your inbox.
+				</h2>
+
+				<form action="http://design-jostein.rhcloud.com/Rainbow/addmessage.php" method="post">		
+					<div class="centralInput">
+						<input type="email" class="inputField" name="contactEmail" required="required" placeholder="Your@Email">
+					</div>
+					
+					<input type="hidden" name="contactTopic" value="Category1" required="required">
+
+					<input type="hidden" value="Rainbow" name="contactSubject" required="required" placeholder="Subject">
+		
+					<input type="hidden" value="Newsletter Request" name="contactMessage" required="required" placeholder="Write your message here..." style="resize:none;"></textarea>
+					
+					<div class="centralInput" >
+						<input type='submit' name='submit' value='Submit' id="orderButton"/>
+					</div>
+				</form>
+			</div>
+		</div>
+
+		<div class="container-fluid" id="border1-2"></div>		
+
+		<div class="container-fluid" id="secondSection">
+			<div class="row vertical-align">
+				<div class="col-lg-2 col-md-2 col-sm-1 hidden-xs text-center leftImage"></div>	
+			
+				<div class="col-lg-6 col-lg-offset-1 col-md-8 col-sm-10 col-xs-12" style="z-index: 2;">
+					<div class="panelBorder">
+						<div class="panel panel-default">
+							<div class="panel-header text-center">
+								<br>
+								<img src="https://dl.dropboxusercontent.com/s/f1apcnyr31ju17w/phonetop.png" alt="-_-" width="7%"/>
+								<div class="clearfix"></div>
+								<br>
+							</div>
+							
+							<div class="panel-body" id="myScreen">	
+								<h4 class="text-center"> 
+									Read with Rainbow
+								</h4>
+								<p> 
+									Rainbow Reader is the only eReader allowing you to easily switch between
+									users. Each user can have their own settings and libraries. You are also
+									able to create libraries that can be accessed by all users. Yes, you can
+									finally have your cake and eat it too!
+								</p>
+								<p> 
+									Tired of browsing through a library of books you don't care about? Having
+									separate accounts gives you what you need when you need it. Linking your
+									account to the Rainbow will let you access your account on any device and
+									keep your library safe even if something happens to your device.
+								</p>
+								<hr>
+								<p> 
+									Parents will be happy to hear that you can create parental accounts. By
+									using these, you can choose exactly what your child can or cannot access.
+									Each parental account can have an unlimited amount of child accounts with
+									different restrictions. This way you can use one device for your whole
+									family. No more need for watching what your child is reading. With Rainbow
+									Reader you can rest assured your child has access to only what you have 
+									decided.
+								</p>
+								<p> 
+									You can even set time limitations! You only want your child to use it 1
+									hour a day? No Problem! You don't want certain accounts to be accessed 
+									after 10 on a weekday and 12 on weekends? Done! Mix and match to fit your
+									need!
+								</p>
+								<h3 class="text-center"> 
+									Click the button to change the color.
+								</h3>
+							</div>	
+					
+							<div class="panel-footer text-center">
+								<img src="https://dl.dropboxusercontent.com/s/yqdvfrn2f3jgy2o/phonebutton.png" alt="O" width="7%" onclick="screenToggle('myScreen')"/>
+							</div>
+						</div>	
+					</div>
+				</div>
+				
+				<div class="col-lg-2 col-lg-offset-1 col-md-2 col-sm-1 hidden-xs text-center rightImage"></div>	
+			</div>	
+		</div>
+			
+		<div class="container-fluid" id="border2-3"></div>
+
+		<div class="container-fluid text-center" id="thirdSection">	
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center laptopContainer">
+					<img src="https://dl.dropboxusercontent.com/s/v65rkrujgrin9fn/laptop.png" alt="img" height="100%"/>
+					<div>
+						<h2>
+						FAQ
+						</h2>
+						<p> 
+							<b>Can I use Rainbow on iOS/Android?</b>
+							<br>
+							Yes! 
+						</p>
+						
+						<p> 
+							<b>Can I read the news on my Rainbow Reader?</b>
+							<br>
+							Yes!
+						</p>
+						
+						<p> 
+							<b>What about comics?</b>
+							<br>
+							Yes!
+						</p>
+					</div>	
+			</div>	
+		</div>
+		
+		<div class="container-fluid" id="border3-4"></div>		
+
+		<div class="container-fluid text-center" id="fourthSection">
+
+			<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 text-center">
+				<img class="imgThumb4" src="https://dl.dropboxusercontent.com/s/db5yp7cu8ocdgzk/purple1.png" alt="img"/>
+				<h2>
+					Ethan 'the Beard' Brown
+				</h2>
+				<p> 
+					In charge of the techy stuff, the Beard is constantly improving the Rainbow. 
+					<hr>
+					Favourite Food: <b>Jelly</b> 
+					<br>
+					Favourite Color: <b>Purple</b> 
+					<br>
+					Favourite Book: <b>Where's Waldo?</b> 
+				</p>
+				<br><br>
+			</div>	
+			
+			<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 text-center">
+				<img class="imgThumb4" src="https://dl.dropboxusercontent.com/s/bu0mmzd5mb9sb05/purple2.png" alt="img"/>
+				<h2>
+					Alexander 'Solitaire' Smith
+				</h2>
+				<p> 
+					The color wizard. He makes things pretty whilst playing preinstalled games. 
+					<hr>
+					Favourite Food: <b>Tacos</b> 
+					<br>
+					Favourite Color: <b>B'dazzled Blue</b> 
+					<br>
+					Favourite Book: <b>The Colour of Magic</b> 
+				</p>
+				<br><br>
+			</div>	
+			
+			<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 text-center">
+				<img class="imgThumb4" src="https://dl.dropboxusercontent.com/s/xzne6ga6sgn1y4f/purple3.png" alt="img"/>
+				<h2>
+					Abigail 'Chief' Fletcher
+				</h2>
+				<p> 
+					The Chief is the brains behind the operation. She's also in charge of the candy.
+					<hr>
+					Favourite Food: <b>Tom Yum Kung Maphrao On Nam Khon</b> 
+					<br>
+					Favourite Color: <b>Gray</b> 
+					<br>
+					Favourite Book: <b>Harry Potter</b> 
+				</p>
+				<br><br>
+			</div>	
+		</div>
+			
+		<div class="container-fluid" id="border4-5"></div>		
+
+		<div class="container-fluid text-center" id="fifthSection">
+			<div class="col-lg-4 col-md-4 col-lg-offset-4 col-md-offset-4 col-sm-12 col-xs-12 text-center">
+				<img class="imgThumb5" src="https://dl.dropboxusercontent.com/s/mhxsqmyhwnga6te/blue.png" alt="img"/>
+				<h2>
+					Your Name?
+				</h2>
+				<p> 
+					Would you like to join Rainbow?
+					<hr>
+					There are no current openings. 
+					<hr>
+					For general applications, please use the contact form below.
+				</p>
+			</div>	
+		</div>
+		
+		<div class="container-fluid" id="border5-6"></div>		
+
+		<div class="container-fluid" id="sixthSection">
+			<div id="inputContainer">
+				<form action="http://design-jostein.rhcloud.com/Rainbow/addmessage.php" method="post">		
+					<div class="centralInput">
+						<input type="email" class="inputField" name="contactEmail" required="required" placeholder="Your@Email">
+					</div>
+					
+					<input type="hidden" name="contactTopic" value="Category1" required="required">
+							
+					<div class="centralInput">
+						<input type="text" class="inputField" name="contactSubject" required="required" placeholder="Subject">
+					</div>
+					
+					<div class="centralInput">
+						<textarea rows="12" class="inputField textInput" name="contactMessage" required="required" placeholder="Write your message here..." style="resize:none;"></textarea>
+					</div>
+					
+					<div class="centralInput">
+						<input type='submit' name='submit' value='Submit' id="submitButton"/>
+					</div>
+				</form>	
+			</div>
+		</div>
+
+		<footer>
+			<div class="container-fluid footerShadow">
+				<br><br>
+				<p class="pull-right">
+					&copy; Copyright 2016 by 
+					<a class="footerLink" target="_blank" href="../Hub/index.html">Jostein Design</a>. 
+					All Rights Reserved.
+				</p>
+				<br><br>
+			</div>
+		<footer>
+	</body>
+</html>
